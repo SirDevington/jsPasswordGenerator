@@ -42,12 +42,14 @@ header {
   padding: 30px 40px;
 }
 
+
+
 .card-header::after {
-  content: " ";
   display: block;
   width: 100%;
   background: #e7e9eb;
   height: 2px;
+  margin-bottom: 10px;
 }
 
 .card-body {
@@ -72,6 +74,11 @@ header {
   clear: both;
 }
 
+.options{
+  display: flex;
+  justify-content: space-between;
+}
+
 .btn {
   border: none;
   background-color: rgb(11, 8, 175);
@@ -88,6 +95,11 @@ header {
   cursor: pointer;
 }
 
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
 button[disabled] {
   cursor: default;
   background: #c0c7cf;
@@ -97,6 +109,7 @@ button[disabled] {
   float: right;
 }
 
+
 #password {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -104,15 +117,15 @@ button[disabled] {
   border: none;
   display: block;
   width: 100%;
-  padding-top: 15px;
+  padding-top: 25px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-bottom: 85px;
+  padding-bottom: 5px;
   font-size: 1.2rem;
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
-  border: 2px dashed #c0c7cf;
+  border: 2px solid #c0c7cf;
   border-radius: 6px;
   resize: none;
   overflow: hidden;

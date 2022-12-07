@@ -16,24 +16,32 @@ function getRandomItem(list) {
 
 function generatedpassword() { 
 
-var userInput = window.prompt("How Long Do You Want Your Password to Be?")
+  var userInput = window.prompt("How Long Do You Want Your Password to Be?")
+  var passwordLength = parseInt(userInput)
 
-var passwordLength = parseInt(userInput)
+  if (isNaN(passwordLength)) {
+    window.alert("This is not a number!")
+    return 
+  }
 
-if (isNaN(passwordLength)) {
-window.alert("This is not a number!")
-return 
-}
-
-if (passwordLength < 8 || passwordLength > 128) {
+  if (passwordLength < 8 || passwordLength > 128) {
     window.alert("Password length must be between 8 and 128 characters")
     return 
-}
+  }
 
-var wantsNumbers = confirm("Would you like to include numbers in your password?")
-var wantsLowerLetters = confirm("Do desire lowercases in your password?");
-var wantsUpperLetters = confirm("Do you desire uppercases in your password?");
-var wantsSymbols = confirm("Do you desire special characters in your password?");
+  var wantsNumbers = false;
+  var wantsUpperLetters = false;
+  var wantsSymbols = false;
+
+  if (document.getElementById("wantsNumbers").checked) {
+    wantsNumbers = true;
+  }
+  if (document.getElementById("wantsUpperLetters").checked) {
+    wantsUpperLetters = true;
+  }
+  if (document.getElementById("wantsSymbols").checked) {
+    wantsSymbols = true;
+  }
 
 var numberList = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"] 
 
@@ -85,6 +93,7 @@ return generatedPassword
 
 //Write password to the #password input 
 function writePassword() {
+  
   var password = generatedpassword();
   var passwordText = document.querySelector("#password");
 
