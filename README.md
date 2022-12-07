@@ -19,3 +19,5 @@ simple directions the password will appear in the generator.
 [Live Site Link](https://blainthomas.github.io/jsPasswordGenerator/)
 
 [Github Link](https://github.com/BlainThomas)
+
+<img src="https://github.com/BlainThomas/BlainThomas/blob/master/logos/JavaScript.png" alt="drawing" width="40"/>
