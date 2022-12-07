@@ -32,6 +32,7 @@ function generatedpassword() {
   var wantsNumbers = false;
   var wantsUpperLetters = false;
   var wantsSymbols = false;
+  var wantsLowerLetters = true;
 
   if (document.getElementById("wantsNumbers").checked) {
     wantsNumbers = true;
