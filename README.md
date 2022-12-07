@@ -16,6 +16,5 @@ simple directions the password will appear in the generator.
 
 ## Visuls 
 
-![The Password Generator application displays a red button to "Generate Password".](/images/Screen%20Shot%202022-08-18%20at%2010.54.55%20PM.png)
 
-[Github Link]()
+[Github Link](https://github.com/BlainThomas)
