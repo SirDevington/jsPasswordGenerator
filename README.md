@@ -16,5 +16,6 @@ simple directions the password will appear in the generator.
 
 ## Visuls 
 
+[Live Site Link](https://blainthomas.github.io/jsPasswordGenerator/)
 
 [Github Link](https://github.com/BlainThomas)
